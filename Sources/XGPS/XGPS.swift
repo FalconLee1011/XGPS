@@ -7,7 +7,6 @@
 //  Copyright © 2020 FXTLiDEV. All rights reserved.
 //
 
-
 import Foundation
 import CoreLocation
 
