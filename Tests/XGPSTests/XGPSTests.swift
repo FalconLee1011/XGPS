@@ -1,4 +1,5 @@
 import XCTest
+import CoreLocation
 @testable import XGPS
 
 final class XGPSTests: XCTestCase {
@@ -6,7 +7,8 @@ final class XGPSTests: XCTestCase {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct
         // results.
-        XCTAssertEqual(XGPS().text, "Hello, World!")
+        var lm = CLLocationManager()
+//        XCTAssertEqual(XGPSlib().getCoordinate(lm))
     }
 
     static var allTests = [
