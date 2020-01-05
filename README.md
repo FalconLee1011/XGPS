@@ -1,3 +1,3 @@
 # XGPS
 
-A description of this package.
+## A light, easy to use CoreLocation compact lib
