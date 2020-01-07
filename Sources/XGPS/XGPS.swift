@@ -22,13 +22,13 @@ public class XGPSlib: NSObject {
         let spd = manager.location?.speed ?? 0.0
         manager.stopUpdatingLocation()
         
+        if spd < 0 { return 0.0 }
+        
         switch _unit {
         case .kmh:
-            if((spd * 3.6) >= 0) {return (spd * 3.6) as Double}
-            else {return 0}
+            return String(format: "%.1f", (spd * 3.6) as Double)
         case .mph:
-            if(spd >= 0) {return spd as Double}
-            else {return 0}
+            return String(format: "%.1f", spd as Double)
         }
     }
     
