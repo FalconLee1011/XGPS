@@ -26,9 +26,9 @@ public class XGPSlib: NSObject {
         
         switch _unit {
         case .kmh:
-            return String(format: "%.1f", (spd * 3.6) as Double)
+            return Double(String(format: "%.1f", (spd * 3.6) as Double)) ?? 0.0
         case .mph:
-            return String(format: "%.1f", spd as Double)
+            return Double(String(format: "%.1f", spd as Double)) ?? 0.0
         }
     }
     
